@@ -59,13 +59,19 @@ spec:
               containerPort: {{ .Values.service.port }}
               protocol: TCP
           livenessProbe:
+            failureThreshold: 5
             httpGet:
               path: /
               port: http
+            periodSeconds: 60
+            timeoutSeconds: 30
           readinessProbe:
+            failureThreshold: 5
             httpGet:
               path: /
               port: http
+            periodSeconds: 60
+            timeoutSeconds: 30
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
       {{- with .Values.nodeSelector }}
