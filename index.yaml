@@ -2,6 +2,16 @@ apiVersion: v1
 entries:
   xen-exporter:
   - apiVersion: v2
+    appVersion: 1.1.0
+    created: "2023-07-17T17:38:04.060390784Z"
+    description: A Helm chart for Kubernetes
+    digest: b32dea772cd96cbe3774e0486ec9736c9c75252b872d74cec7ea74d3a532f6dd
+    name: xen-exporter
+    type: application
+    urls:
+    - https://github.com/tsrats/helm-charts/releases/download/xen-exporter-1.1.0/xen-exporter-1.1.0.tgz
+    version: 1.1.0
+  - apiVersion: v2
     appVersion: 1.0.0
     created: "2023-07-17T17:19:27.460751385Z"
     description: A Helm chart for Kubernetes
@@ -11,4 +21,4 @@ entries:
     urls:
     - https://github.com/tsrats/helm-charts/releases/download/xen-exporter-1.0.0/xen-exporter-1.0.0.tgz
     version: 1.0.0
-generated: "2023-07-17T17:19:27.460760885Z"
+generated: "2023-07-17T17:38:04.060590787Z"
